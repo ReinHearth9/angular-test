@@ -27,7 +27,11 @@ import { Component, OnInit } from '@angular/core';
 `
 })
 export class PaginationComponent implements OnInit {
-
+  results = [
+    { "id": 1, "firstName": "David", "lastName": "Wallace" },
+    { "id": 2, "firstName": "Sonia", "lastName": "Ross" },
+    { "id": 3, "firstName": "Anthony", "lastName": "Thomson" }
+  ]
 
   constructor() { }
 
