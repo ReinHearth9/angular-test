@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, Output, OnInit, EventEmitter } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-login-page',
+  template: `
+<div>
+
+</div>
+`
 })
-export class AppComponent {
-  title = 'angular-test';
+export class LoginPageComponent {
+  @Output() login: EventEmitter<any> = new EventEmitter();
 }
+
